@@ -1,0 +1,33 @@
+*
+{
+    box-sizing: border-box;
+    font-family: Raleway,sans-serif;
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+}
+.topofpage
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topofpage img
+{
+    height: 45px;
+}
+.topofpage ul
+{
+  display: flex;
+  list-style: none;
+}
+.topofpage 
+{
+   margin: 0 10px 0 35px;
+}
+.topofpage a 
+{
+    text-decoration: none;
+}

@@ -116,3 +116,37 @@ header
     width: 225px;
     height: 50px;
 }
+/*Filtres*/
+
+.filter
+{
+    border: 2px solid  #f2f2f2;
+    border-radius: 32px;
+    
+    
+
+}
+.Filterlist
+{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.fas.fa-money-bill-wave
+{
+    background-color: #deebff;
+    border: 1px solid transparent;
+    color: #0065fc;
+    border-radius: 50px;
+    width: auto;
+    padding: 13px;
+    margin: -3px;
+}
+.Filterlist span
+{
+    font-weight: bold;
+    padding: 16px;
+    
+}

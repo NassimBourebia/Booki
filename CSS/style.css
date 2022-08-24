@@ -1,12 +1,16 @@
 *
 {
     box-sizing: border-box;
-    font-family: Raleway,sans-serif;
+    font-family: "Raleway",sans-serif;
 }
 body
 {
     margin: 50px;
-    margin-top: 30px;
+    margin-top: px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
 }
 
 header
@@ -22,57 +26,70 @@ header
 {
    font-weight: 450;
 }
-.topofpage
+nav
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 30px;   
+    margin-left: 0px;   
     margin-bottom: 25px;
-
+    border: 1px solid red;
+  
+    
+    
 }
 
-.topofpage img
+nav img
 {
     height: 45px;
-    
-
+    flex-wrap: wrap;    
 }
-.topofpage a
+#logo
 {
-  list-style: none;
-  
+    margin-right: auto;
+    
+    
 }
-.topofpage ul
+nav a
 {
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding: 30px;
+  
+}
+nav ul
+{
+  list-style: none;
+  display: flex;
+  padding-inline-start: 0px;
+  
+  
  
 }
 
-.topofpage :hover
+nav :hover
 {
     color: #0065FC;
 }
-.topofpage li 
+
+nav a:hover
 {
-   margin: 0px 18px 0 35px;
-   color: black;
-   text-decoration: none;
-}
-.topofpage a:hover
-{
-    border-top: 3px solid #0065FC;
-    padding-top: 44px;
+    border-top-color:  #0065FC;
+    
     
    
 }
-.topofpage a 
+nav a 
 {
-    
+    border-top: 3px solid transparent;
     text-decoration: none;
     color: black;
+    align-items: center;
+   flex-wrap: wrap;
 }
 
 .searchbar
@@ -164,7 +181,6 @@ header
 {
     display: flex;
     align-items: center;
-    border: 2px solid red;
 
 }
 .info i
@@ -215,11 +231,8 @@ header
     justify-content: space-around;
     margin-bottom: 16px;
 }
-.listapp div
-{
-    border: 1px solid blue;
-    flex-basis: cacl(33%-16px);  
-}
+ 
+
 .listappartements .Populaire div
 {
    border: 1px solid blue;
@@ -229,5 +242,93 @@ header
 {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+   
 }
+/* APPARTEMENT*/
+
+.apartment1
+{
+    background-color: white;
+    border-radius: 16px;
+    padding: 7px;
+    box-shadow: 0 0 16px #0000002e;   
+}
+.apartment1 p,
+.apartment1 h3
+{
+    margin: 3.2px;
+}
+
+.apartment1 img
+{
+    border-radius: 16px 16px 0 0;
+    height: 160px;
+}
+
+.blue
+{
+    color: #0065FC;
+}
+.darkegrey
+{
+    color:lightgrey;
+
+}
+@media (max-width: 768px) {
+  .subnav {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    
+ }
+}
+
+@media (max-width: 768px) {
+        
+      header img {
+
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;  
+      
+    }
+    
+    
+    .topofpage a {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .subnav{
+
+        
+        flex-basis: 100%;
+        
+        
+    }
+    .subnav a {
+        flex-basis: 50%;      
+    }
+    .subnav a:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top-color: transparent;
+
+    }
+         }
+
+    .subnav
+    {
+    
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    
+    }
+
+    

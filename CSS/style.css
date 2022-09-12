@@ -13,12 +13,14 @@ a {
     font-weight: 400;
 }
 
+
 section {
     margin-left: 40px;
     margin-right: 40px;
 }
 
 
+/*HEADER*/
 
 header {
     display: flex;
@@ -30,6 +32,7 @@ header {
 }
 
 /***NAV***/
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -50,13 +53,18 @@ nav img {
     margin-right: auto;
 }
 
+
 nav a {
-    list-style: none;
+
     display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: black;
     align-items: center;
-    justify-content: flex-end;
     flex-wrap: wrap;
     padding: 30px;
+     border-top: 3px solid transparent;
+    margin-top: 7px;
 }
 
 nav ul {
@@ -70,16 +78,11 @@ nav :hover {
 }
 
 nav a:hover {
+
     border-top-color: #0065FC;
 }
 
-nav a {
-    border-top: 3px solid transparent;
-    text-decoration: none;
-    color: black;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
 
 .subnav {
     display: flex;
@@ -87,29 +90,7 @@ nav a {
     flex-wrap: wrap;
 }
 
-@media (max-width: 992px) {
-    .subnav {
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .subnav a {
-
-        flex-basis: 50%;
-
-    }
-
-    nav {
-        margin-left: -48px;
-        margin-right: -42px;
-    }
-}
 
 .hébtitle {
     font-size: 22px;
@@ -181,6 +162,8 @@ nav a {
     height: 50px;
 }
 
+/*END HEADER*/
+
 /*Filtres*/
 
 .filter {
@@ -235,10 +218,10 @@ nav a {
 
 i:hover {
     transform: scale(1.3);
-    box-shadow: black;
+
 }
 
-.listappartements {
+.listapartment {
     display: flex;
     gap: 47px;
 }
@@ -261,14 +244,14 @@ i:hover {
 }
 
 
-.listappartements .marseille {
+.listapartment .marseille {
     padding: 25px;
     background-color: #F2F2F2;
     flex-basis: 66%;
     border-radius: 16px;
 }
 
-.listappartements .Populaire {
+.listapartment .Populaire {
     padding: 16px;
     background-color: #F2F2F2;
     flex-basis: 33%;
@@ -277,11 +260,17 @@ i:hover {
 
 
 
-.listappartements .marseille a {
+.listapartment .marseille a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
+.links > p
+{
+    font-weight:normal;
+    
+}
+
 
 .listapp {
     display: flex;
@@ -401,7 +390,7 @@ i:hover {
     margin-top: auto;
 }
 
-.listappartements .popularflex {
+.listapartment .popularflex {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -432,6 +421,13 @@ img {
 
 /*Activités Marseille*/
 
+.Activités {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 0px;
+}
+
 #ActMar {
     margin-left: 40px;
     margin-top: 60px;
@@ -439,11 +435,25 @@ img {
     font-size: 18.72px;
 }
 
-.Activités {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 40px;
+.Vieux-Port:hover,.Fort-de-Pomègues:hover,.Iles-du-Frioul:hover,
+.Parc-National-des-Calanques:hover,.Notre-Dame-de-la-Garde:hover,
+.Parc-Longchamp:hover{
+
+transform: scale(1.02);
+box-shadow: 3px 5px 11px -5px #000000;  
+
 }
+
+.Vieux-Port p,.Fort-de-Pomègues p,.Iles-du-Frioul p,
+.Parc-National-des-Calanques p,.Notre-Dame-de-la-Garde p,
+.Parc-Longchamp p {
+
+font-weight: bold;
+margin-top: 10px;
+margin-left: 10px;
+
+}
+
 
 .Vieux-Port {
     box-shadow: 1px 3px 8px 1px #e2e2e2;
@@ -452,11 +462,9 @@ img {
     border-radius: 20px;
     margin-top: 20px;
 }
+    
 
-.Vieux-Port:hover {
-    transform: scale(1.02);
-    box-shadow: 3px 5px 11px -5px #000000;
-}
+
 
 .Vieux-Port img {
     height: 390px;
@@ -464,11 +472,7 @@ img {
     border-radius: 20px 20px 0 0;
 }
 
-.Vieux-Port p {
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-}
+
 
 .Fort-de-Pomègues {
     box-shadow: 1px 3px 8px 1px #e2e2e2;
@@ -477,10 +481,7 @@ img {
     border-radius: 20px;
 }
 
-.Fort-de-Pomègues:hover {
-    transform: scale(1.02);
-    box-shadow: 3px 5px 11px -5px #000000;
-}
+
 
 .Fort-de-Pomègues img {
     height: 190px;
@@ -489,11 +490,6 @@ img {
     object-fit: cover;
 }
 
-.Fort-de-Pomègues p {
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-}
 
 .Iles-du-Frioul {
     box-shadow: 1px 3px 8px 1px #e2e2e2;
@@ -502,10 +498,7 @@ img {
     border-radius: 20px;
 }
 
-.Iles-du-Frioul:hover {
-    transform: scale(1.02);
-    box-shadow: 3px 5px 11px -5px #000000;
-}
+
 
 .Iles-du-Frioul img {
     height: 93px;
@@ -513,11 +506,6 @@ img {
     border-radius: 20px 20px 0 0;
 }
 
-.Iles-du-Frioul p {
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-}
 
 .Parc-National-des-Calanques {
     box-shadow: 1px 3px 8px 1px #e2e2e2;
@@ -527,10 +515,7 @@ img {
     margin-top: 20px;
 }
 
-.Parc-National-des-Calanques:hover {
-    transform: scale(1.02);
-    box-shadow: 3px 5px 11px -5px #000000;
-}
+
 
 .Parc-National-des-Calanques img {
     height: 390px;
@@ -538,11 +523,7 @@ img {
     border-radius: 20px 20px 0 0;
 }
 
-.Parc-National-des-Calanques p {
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-}
+
 
 .Notre-Dame-de-la-Garde {
     box-shadow: 1px 3px 8px 1px #e2e2e2;
@@ -551,10 +532,6 @@ img {
     border-radius: 20px;
 }
 
-.Notre-Dame-de-la-Garde:hover {
-    transform: scale(1.02);
-    box-shadow: 3px 5px 11px -5px #000000;
-}
 
 .Notre-Dame-de-la-Garde img {
     height: 130px;
@@ -562,11 +539,7 @@ img {
     border-radius: 20px 20px 0 0;
 }
 
-.Notre-Dame-de-la-Garde p {
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-}
+
 
 .Parc-Longchamp {
     box-shadow: 1px 3px 8px 1px #e2e2e2;
@@ -575,10 +548,7 @@ img {
     border-radius: 20px;
 }
 
-.Parc-Longchamp:hover {
-    transform: scale(1.02);
-    box-shadow: 3px 5px 11px -5px #000000;
-}
+
 
 .Parc-Longchamp img {
     height: 157px;
@@ -586,11 +556,7 @@ img {
     border-radius: 20px 20px 0 0;
 }
 
-.Parc-Longchamp p {
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px;
-}
+
 
 #colonne2 {
     display: flex;
@@ -612,21 +578,146 @@ img {
 }
 
 
+/*FOOTER*/
+
+.pied-de-page {
+    display: flex;
+    justify-content: flex-start;
+    gap: 140px;
+    margin-top: 55px;
+    background-color: #F2F2F2;
+}
+
+.apropos,.noshébergement,.assistance,{
+
+    margin-right:10px;
+}
+
+                        /****MEDIA QUERIES****/
+
+/*HEADER MEDIA QUERIES*/
+
+@media (max-width:200px)
+{
+    .header
+    {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    /*logoBooki*/
+    header img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav {
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+
+    .subnav {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        flex-basis: 100%;
+        order: 1;
+    }
+
+    .subnav a {
+
+        flex-basis: 50%;
+        border-bottom: 3px solid #efeeee;
+        justify-content: space-around;
+    }
+
+    .subnav a:hover {
+        color: #0065FC;
+        border-bottom-color: #0065FC;
+        border-top-color: transparent;
+    }
+    .searchbutton {
+        display: none;
+
+    }
+
+    .fas.fa-search {
+        display: inline;
+        background-color: inherit;
+    }
+}
+
+
+
+
+
+
+/*SECTION LISTAPARTMENT MEDIA QUERIES*/
+
+
+@media (max-width: 992px) {
+
+    section {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .listapartment {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .popularcard {
+        max-width: none;
+
+    }
+
+    .Populaire {
+        order: -1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popularflex {
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .listapartment .Populaire {
+        padding: 16px;
+        background-color: #F2F2F2;
+        flex-basis: 33%;
+        border-radius: 0px;
+        width: 100%;
+        border-radius: 0px;
+        
+    }
+
+    .listapartment .marseille {
+        background-color: white;
+    }
+
+    .listapp {
+        display: flex;
+    }
+
+}
+
+
+
 @media screen and (min-width: 992px)
 
 /*Activités*/
-    {
 
-    .Vieux-Port {
-        width: 100%;
-    }
-
-    .Vieux-Port img {
-        width: 100%;
-    }
-
+{
     #colonne1 {
         width: 23%;
+        margin-left: 15px;
     }
 
     #colonne2 {
@@ -647,206 +738,28 @@ img {
 
     }
 
-    .Fort-de-Pomègues {
-        width: 100%;
-    }
-
-    .Fort-de-Pomègues img {
-        width: 100%;
-    }
-
-    .Iles-du-Frioul {
-        width: 100%;
-    }
-
-    .Iles-du-Frioul img {
-        width: 100%;
-    }
-
-    .Parc-National-des-Calanques {
-        width: 100%;
-    }
-
-    .Parc-National-des-Calanques img {
-        width: 100%;
-    }
-
-    .Notre-Dame-de-la-Garde {
-        width: 100%;
-    }
-
-    .Notre-Dame-de-la-Garde img {
-        width: 100%;
-    }
-
+    .Vieux-Port,.Fort-de-Pomègues,.Iles-du-Frioul,
+    .Parc-National-des-Calanques,.Notre-Dame-de-la-Garde,
     .Parc-Longchamp {
+
         width: 100%;
     }
 
+    .Vieux-Port img,.Fort-de-Pomègues img,.Iles-du-Frioul img,
+    .Parc-National-des-Calanques img,.Notre-Dame-de-la-Garde img,
     .Parc-Longchamp img {
+
         width: 100%;
     }
 
+
 }
 
-/*FOOTER*/
-
-.Pied-de-page {
-    display: flex;
-    justify-content: flex-start;
-    gap: 140px;
-    margin-top: 55px;
-    background-color: #F2F2F2;
-}
-
-
-.Apropos {
-    margin-right: 10px;
-}
-
-.Noshébergement {
-    margin-right: 10px;
-}
-
-.Assistance {
-    margin-right: 10px;
-}
-
-
-
-
-
-
-
-@media (max-width: 992px) {
-    .subnav {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-}
-
-@media (max-width: 992px) {
-
-    header img {
-
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-
-
-    .subnav {
-
-
-        flex-basis: 100%;
-        order: 1;
-    }
-
-    .subnav a {
-
-        flex-basis: 50%;
-        border-bottom: 3px solid #efeeee;
-        justify-content: space-around;
-    }
-
-    .subnav a:hover {
-        color: #0065FC;
-        border-bottom-color: #0065FC;
-        border-top-color: transparent;
-    }
-}
-
-@media (max-width: 992px) {
-
-    .searchbutton {
-        display: none;
-
-    }
-
-    .fas.fa-search {
-        display: inline;
-        background-color: inherit;
-    }
-}
-
-
-@media (max-width: 992px) {
-
-    .listappartements {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .Populaire {
-        order: -1;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .popularflex {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width:1200px) {
-    .searchbar.searchbutton {
-        display: none;
-    }
-}
-
-
-
-/*Tablette*/
 
 @media (max-width:992px) {
-    section {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+    
 
-
-    .popularcard {
-        max-width: none;
-
-    }
-
-    .listappartements .Populaire {
-
-        border-radius: 0px;
-        width: 100%;
-    }
-
-    section {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .listappartements .Populaire {
-        padding: 16px;
-        background-color: #F2F2F2;
-        flex-basis: 33%;
-        border-radius: 0px;
-        width: 100%;
-    }
-
-    .listappartements .marseille {
-        background-color: white;
-    }
-
-    .listapp {
-        display: flex;
-    }
-
+ 
     .Activités {
         margin-left: 0px;
         display: flex;
@@ -855,79 +768,26 @@ img {
         padding: 0px 30px 30px 30px;
     }
 
-    .Vieux-Port {
+    .Vieux-Port,.Fort-de-Pomègues,.Iles-du-Frioul,.Parc-National-des-Calanques,
+     .Notre-Dame-de-la-Garde,.Parc-Longchamp
+      {
         height: 400px;
         width: 100%;
-    }
+     }
 
-    .Vieux-Port img {
+    
+    .Activités img {
         width: 100%;
         height: 340px;
     }
 
-    .Fort-de-Pomègues {
-        height: 400px;
-        width: 100%;
-    }
+    
 
-    .Fort-de-Pomègues img {
-        width: 100%;
-        height: 340px;
-    }
-
-    .Iles-du-Frioul {
-        height: 400px;
-        width: 100%;
-    }
-
-    .Iles-du-Frioul img {
-        width: 100%;
-        height: 340px;
-    }
-
-    .Parc-National-des-Calanques {
-        height: 400px;
-        width: 100%;
-    }
-
-    .Parc-National-des-Calanques img {
-        width: 100%;
-        height: 340px;
-    }
-
-    .Notre-Dame-de-la-Garde {
-        height: 400px;
-        width: 100%;
-    }
-
-    .Notre-Dame-de-la-Garde img {
-        height: 340px;
-        width: 100%;
-    }
-
-    .Parc-Longchamp {
-        height: 400px;
-        width: 100%;
-    }
-
-    .Parc-Longchamp img {
-        height: 340px;
-        width: 100%;
-
-    }
-
-    #colonne2,
-    #colonne3,
-    #colonne4 {
+    #colonne2,#colonne3,#colonne4 
+    {
         margin-left: 0px;
         gap: 15px;
     }
-
-    .popularcard {
-        max-width: none;
-    }
-
-
 }
 
 
@@ -940,7 +800,7 @@ img {
         margin-right: 0px;
     }
 
-    .listappartements .Populaire {
+    .listapartment .Populaire {
         padding: 16px;
         background-color: #F2F2F2;
         flex-basis: 33%;
@@ -948,7 +808,7 @@ img {
         width: 100%;
     }
 
-    .listappartements .marseille {
+    .listapartment .marseille {
         background-color: white;
     }
 
@@ -970,70 +830,21 @@ img {
         padding: 0px 30px 30px 30px;
     }
 
-    .Vieux-Port {
+     .Vieux-Port,.Fort-de-Pomègues,.Iles-du-Frioul,.Parc-National-des-Calanques,
+     .Notre-Dame-de-la-Garde,.Parc-Longchamp
+     {
         height: 190px;
         width: 100%;
-    }
-
-    .Vieux-Port img {
-        width: 100%;
-        height: 140px;
-    }
-
-    .Fort-de-Pomègues {
-        height: 190px;
-        width: 100%;
-    }
-
-    .Fort-de-Pomègues img {
-        width: 100%;
-        height: 140px;
-    }
-
-    .Iles-du-Frioul {
-        height: 190px;
-        width: 100%;
-    }
-
-    .Iles-du-Frioul img {
-        width: 100%;
-        height: 140px;
-    }
-
-    .Parc-National-des-Calanques {
-        height: 190px;
-        width: 100%;
-    }
-
-    .Parc-National-des-Calanques img {
-        width: 100%;
-        height: 140px;
-    }
-
-    .Notre-Dame-de-la-Garde {
-        height: 190px;
-        width: 100%;
-    }
-
-    .Notre-Dame-de-la-Garde img {
+     }
+     
+    .Activités img
+    {
         height: 140px;
         width: 100%;
     }
 
-    .Parc-Longchamp {
-        height: 190px;
-        width: 100%;
-    }
 
-    .Parc-Longchamp img {
-        height: 140px;
-        width: 100%;
-
-    }
-
-    #colonne2,
-    #colonne3,
-    #colonne4 {
+    #colonne2,#colonne3,#colonne4 {
         margin-left: 0px;
         gap: 15px;
     }
@@ -1048,9 +859,42 @@ img {
 }
 
 /*Mobile Footer*/
+
+@media (max-width:992px) {
+
+    .apropos,.noshébergement,.assistance
+    {
+        margin-left: 30px;    
+    }
+    .pied-de-page
+    {
+        gap: 100px;
+    }
+}
+
 @media (max-width:768px) {
-    .Pied-de-page {
+    .pied-de-page {
         flex-direction: column;
         gap: 0px;
     }
 }
+
+
+
+/*IMAGE POPULAR DERNIERE CARD*/
+
+@media (max-width:430px)
+{
+    #toutbleuetblanc
+    {
+        height: 100px;
+       
+    }
+    .populardescription p,
+    .populardescription h3
+
+    {
+        font-size: 13px;
+    }
+}
+

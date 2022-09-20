@@ -263,6 +263,7 @@ i:hover {
     box-shadow: 0 0 16px #0000002e;
     flex-grow: 1;
     transition: all 0.2s;
+    margin: 0px;
 }
 
 .apartment-card p {
@@ -337,6 +338,7 @@ i:hover {
     box-shadow: 0 0 16px #0000002e;
     flex-grow: 1;
     transition: all 0.2s;
+    margin: 0px;
 }
 
 .popularcard:hover {
@@ -491,15 +493,20 @@ img {
     width: 300px;
     border-radius: 20px 20px 0 0;
 }
+#colonne1{
+    margin: 0px;
+}
 
 #colonne2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0px;
     margin-left: 60px;
 }
 
 #colonne3 {
+    margin: 0px;
     margin-left: 60px;
 }
 
@@ -507,6 +514,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0px;
     margin-left: 60px;
 }
 
@@ -526,11 +534,10 @@ img {
     margin-right: 10px;
 }
 
+
 /*MEDIA QUERIES*/
 
-
 /*HEADER MEDIA QUERIES*/
-
 
 @media (max-width: 992px) {
 
@@ -578,7 +585,6 @@ img {
         border-radius: 16px;
     }
 
-
     .fas.fa-search {
         display: inline;
         background-color: inherit;
@@ -594,7 +600,6 @@ img {
     .searchbar input {
         font-size: 13px;
     }
-
 }
 
 @media (max-width:325px) {
@@ -605,7 +610,6 @@ img {
     .searchbar input {
         font-size: 11px;
     }
-
 }
 
 @media (max-width:200px) {
@@ -615,22 +619,16 @@ img {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*SECTION LISTAPARTMENT MEDIA QUERIES*/
 
+@media (max-width: 1070px){
+
+    .populardescription h3,
+    .populardescription p 
+    {
+        font-size: 14.3px;
+    }
+}
 
 @media (max-width: 992px) {
 
@@ -646,7 +644,6 @@ img {
 
     .popularcard {
         max-width: none;
-
     }
 
     .Populaire {
@@ -662,7 +659,6 @@ img {
 
     .populardescription h3,
     .populardescription p {
-
         font-size: 16px;
     }
 
@@ -673,7 +669,6 @@ img {
         border-radius: 0px;
         width: 100%;
         border-radius: 0px;
-
     }
 
     .listapartment .marseille {
@@ -687,13 +682,11 @@ img {
     #populartitle {
         width: 100%;
     }
-
 }
 
 @media (max-width:430px) {
     #toutbleuetblanc {
         height: 100px;
-
     }
 
     .populardescription p,
@@ -720,14 +713,12 @@ img {
         margin-left: 25px;
 
     }
-
     #colonne4 {
         width: 20%;
         margin-left: 25px;
         margin-top: 20px;
 
     }
-
     .Vieux-Port,
     .Fort-de-Pomègues,
     .Iles-du-Frioul,
@@ -737,7 +728,6 @@ img {
 
         width: 100%;
     }
-
     .Vieux-Port img,
     .Fort-de-Pomègues img,
     .Iles-du-Frioul img,
@@ -747,15 +737,10 @@ img {
 
         width: 100%;
     }
-
-
 }
 
 
 @media (max-width:992px) {
-
-
-
     .Activités {
         margin-left: 0px;
         display: flex;
@@ -775,13 +760,10 @@ img {
         width: 100%;
     }
 
-
     .Activités img {
         width: 100%;
         height: 340px;
     }
-
-
 
     #colonne2,
     #colonne3,
@@ -843,7 +825,6 @@ img {
         width: 100%;
     }
 
-
     #colonne2,
     #colonne3,
     #colonne4 {
@@ -854,16 +835,7 @@ img {
     .popularcard {
         max-width: none;
     }
-
-
 }
-
-
-
-
-
-
-
 
 /*FOOTER MEDIA QUERIES*/
 
